@@ -1,0 +1,138 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-of-muj img {
+    width: 400px;
+    height: 100px;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #ff5733;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.apply-btn {
+    background: #ff5733;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* MUJ Banner */
+.muj {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.muj-img img {
+    width: 100%;
+    height: 300px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: #f5f5f5;
+    padding: 40px 0;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Department Dropdown */
+.department-dropdown {
+    text-align: center;
+    margin: 20px;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+/* Faculty List */
+.faculty-list {
+    text-align: center;
+    padding: 20px;
+}
+
+.faculty-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.faculty-member {
+    text-align: center;
+    width: 200px;
+}
+
+.faculty-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

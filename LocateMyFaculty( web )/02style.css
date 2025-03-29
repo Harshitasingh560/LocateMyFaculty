@@ -1,0 +1,104 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background with Image */
+body {
+    height: 100vh;
+    background: url('C:/Users/harsh/OneDrive/Desktop/web class/LocateMyFaculty( web )/all images/background of registration.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Moves content to the right */
+    padding-right: 50px; /* Adjust space from the right edge */
+}
+
+/* Registration Form */
+.register-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Links */
+.nav {
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.nav li {
+    margin-right: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.nav .active {
+    border-bottom: 2px solid red;
+}
+
+/* Form Inputs */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.phone-group {
+    display: flex;
+}
+
+.phone-group select {
+    width: 30%;
+    margin-right: 5px;
+}
+
+/* Dropdowns */
+.dropdowns {
+    display: flex;
+    gap: 10px;
+}
+
+/* Captcha */
+.captcha {
+    display: flex;
+    align-items: center;
+}
+
+.captcha img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+/* Register Button */
+button {
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+/* Resend Link */
+.resend {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+}

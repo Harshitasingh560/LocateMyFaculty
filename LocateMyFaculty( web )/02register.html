@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - MUJ</title>
+    <link rel="stylesheet" href="02style.css">
+    <script defer src="02register.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="register-form">
+            <ul class="nav">
+                <li><a href="#" class="active">Register</a></li>
+                <li><a href="01loginpage.html">Login</a></li>
+            </ul>
+            <form id="registerForm">
+                <input type="text" placeholder="Enter Candidate's Name *" required>
+                <input type="email" placeholder="Enter Candidate's Email Address *" required>
+                
+                <div class="phone-group">
+                    <select>
+                        <option>+91</option>
+                        <option>+1</option>
+                        <option>+44</option>
+                    </select>
+                    <input type="text" placeholder="Enter Candidate's Mobile Number *" required>
+                </div>
+
+                <input type="text" placeholder="Enter OTP">
+
+                <div class="dropdowns">
+                    <select id="state" required onchange="updateCities()">
+                        <option value="">Select State *</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    </select>
+                    
+                    <select id="city" >
+                        <option value="">Select City *</option>
+                    </select>
+                </div>
+
+                <select required>
+                    <option>Select Stream *</option>
+                    <option>Information Technology (IT)</option>
+                    <option>Computer Science and Engineering (CSE)</option>
+                    <option>Computer and Communication Engineering (CCE)</option>
+                </select>
+
+                <select required>
+                    <option>Select Program *</option>
+                    <option>B.Tech</option>
+                    <option>BBA</option>
+                    <option>MBA</option>
+                    <option>M.Tech</option>
+                </select>
+
+                <div class="captcha">
+                    <img src="captcha.png" alt="Captcha">
+                    <input type="text" placeholder="Enter text as shown" required>
+                </div>
+
+                <label>
+                    <input type="checkbox" required>
+                    I authorize Manipal University Jaipur to contact me with updates via Email, SMS, WhatsApp & voice call.
+                </label>
+
+                <button type="submit">Register</button>
+            </form>
+            <a href="#" class="resend">RESEND VERIFICATION EMAIL</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "03success.html"; // Redirect to success page
+        });
+    </script>
+</body>
+</html>
